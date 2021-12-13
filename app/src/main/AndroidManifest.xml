@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartcity">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User.Login"/>
+        <activity android:name=".User.Register"/>
+        <activity android:name=".fragments.centerf.Info"/>
+        <activity android:name=".fragments.centerf.ResetPwd"/>
+        <activity android:name=".fragments.allf.JobMain"/>
+        <activity android:name=".fragments.allf.LookDetilsRoom"/>
+        <activity android:name=".fragments.allf.MetroMian"/>
+        <activity android:name=".fragments.allf.MetroDetils"/>
+        <activity android:name=".fragments.allf.MetroCityList"/>
+        <activity android:name=".fragments.allf.LookRoom"/>
+        <activity android:name=".fragments.allf.Zxing">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

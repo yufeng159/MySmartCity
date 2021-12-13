@@ -1,0 +1,111 @@
+
+
+
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+
+    <FrameLayout
+        android:layout_above="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/con_frame">
+    </FrameLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/lightgray"
+        android:layout_above="@id/bottom_bar"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#99CCFF"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/f_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="首页"
+            android:textColor="@drawable/text_color"
+            android:textSize="10sp" />
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray"/>
+        <TextView
+            android:id="@+id/f_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="全部服务"
+            android:textColor="@drawable/text_color"
+            android:textSize="10sp" />
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray"/>
+        <TextView
+            android:id="@+id/f_founding"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="智慧建党"
+            android:textColor="@drawable/text_color"
+            android:textSize="10sp" />
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray"/>
+        <TextView
+            android:id="@+id/f_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="新闻"
+            android:textColor="@drawable/text_color"
+            android:textSize="10sp" />
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray"/>
+        <TextView
+            android:id="@+id/f_center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="个人中心"
+            android:textColor="@drawable/text_color"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

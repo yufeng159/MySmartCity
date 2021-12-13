@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_color">
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:textSize="20dp"
+            android:gravity="left|center"/>
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/cadetblue"
+            android:text="找工作"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/cadetblue"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/job_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+
+        android:background="#99CCFF"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/job_post"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="找工作"
+            android:textColor="@drawable/text_color"
+            android:textSize="10sp" />
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray"/>
+        <TextView
+            android:id="@+id/job_deliver"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="投递记录"
+            android:textColor="@drawable/text_color"
+            android:textSize="10sp" />
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray"/>
+        <TextView
+            android:id="@+id/job_resume"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="个人简历"
+            android:textColor="@drawable/text_color"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

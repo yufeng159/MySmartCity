@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_color">
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:textSize="20dp"
+            android:gravity="left|center"/>
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/cadetblue"
+            android:text="个人信息"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/cadetblue"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/if_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="ID:"/>
+        <!--    /**-->
+        <!--    * userId : 1111828-->
+        <!--    * userName : yufeng-->
+        <!--    * nickName : 屿枫-->
+        <!--    * email : 1596779123@163.com-->
+        <!--    * phonenumber : 13049003014-->
+        <!--    * sex : 0-->
+        <!--    * avatar : http://120.24.239.118:8080/123.png-->
+        <!--    * idCard : 210882199807251656-->
+        <!--    * balance : 1000.0-->
+        <!--    * score : 1000-->
+        <!--    */-->
+        <TextView
+            android:id="@+id/if_user"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="账号:"/>
+
+        <TextView
+            android:id="@+id/if_card"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="身份证:"/>
+        <TextView
+            android:id="@+id/if_score"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="用户积分:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="邮   箱:"
+            android:id="@+id/if_email"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="头   像:"/>
+            <ImageView
+                android:id="@+id/if_avatar"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="昵  称:"/>
+            <EditText
+                android:id="@+id/if_nick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="手机号:"/>
+            <EditText
+                android:id="@+id/if_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="性   别："
+                android:textSize="20sp" />
+            <RadioButton
+                android:id="@+id/if_sex0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男" />
+            <RadioButton
+                android:id="@+id/if_sex1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical">
+           <Button
+               android:id="@+id/put"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="修改"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
